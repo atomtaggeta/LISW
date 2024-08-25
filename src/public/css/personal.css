@@ -1,0 +1,103 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin-top: 10px;
+    background-color: #f0f0f0;
+}
+
+.personal-center-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.personal-center {
+    width: 350px;
+    padding: 20px;
+    background-color: #eaffd6;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Welcome Message Styling */
+.welcome h2 {
+    text-align:left;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    position: relative;
+    margin-right: 10px;
+}
+
+.profile-pic img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#upload-photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.user h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.user p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.intro {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.main-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-buttons .btn {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: solid 1px #48e755;
+    border-radius: 2px;
+    background-color: #c1f4c5;
+    cursor: pointer;
+}
+
+.main-buttons .logout {
+    background-color: #ffb3b3;
+}
+
+.faq-btn {
+    margin-top: 20px;
+    background-color: #ffe6b3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}

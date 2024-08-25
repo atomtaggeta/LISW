@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="StyleSheet" href="css/personal.css">
+</head>
+<body>
+    
+    <div class="personal-center-page">
+        <div class="personal-center">
+            <!-- Welcome Message -->
+            <div class="welcome">
+                <h2>Welcome to LISW</h2>
+            </div>
+    
+            <!-- Profile Section -->
+            <div class="profile-section">
+                <div class="profile-pic">
+                    <img src="default-profile.jpg" alt="Profile Picture" id="profile-img">
+                    <input type="file" id="upload-photo" accept="image/*" onchange="loadFile(event)">
+                </div>
+                <div class="user">
+                    <h3 id="username">User name</h3>
+                    <p>ID: 18200000</p>
+                    <p>Follow: 123 | Fans: 123</p>
+                </div>
+            </div>
+            
+            <!-- Introduction Section -->
+            <div class="intro">
+                <p id="intro-text">Intro: any</p>
+            </div>
+            
+            <!-- Main Buttons -->
+            <div class="main-buttons">
+                <button class="btn">Learning Progress/Achievements</button>
+                <button class="btn" onclick="editProfile()">Edit Information</button>
+                <button class="btn logout">Log Out</button>
+            </div>
+    
+            <!-- FAQ Button -->
+            <button class="faq-btn">FAQ</button>
+        </div>
+    </div>
+    
+    
+    
+</body>
+
+</html>
