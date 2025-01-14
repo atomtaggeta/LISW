@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login-style.css">
+    <style>
+        /* 添加一些基本的CSS样式 */
+        .register-prompt {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .register-prompt a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .register-prompt a:hover {
+            text-decoration: underline;
+        }
+
+        .error {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="left">
+            <img src="../img/img2.png" class="people p-animtion" alt="people">
+            <img src="../img/img1.png" class="sphere s-animtion" alt="sphere">
+        </div>
+        <div class="right">
+            <div class="top">
+                <div class="top-item">
+                    
+                </div>
+                <div class="top-item">
+                    
+                </div>
+                <div class="top-item">
+                    
+                </div>
+                <div class="top-item">
+                    
+                </div>
+            </div>
+            <div class="form-wrappepr">
+                <h1>Enter LISW!</h1>
+                <input type="text" id="email" class="inputs user" placeholder="Enter Email Or Number">
+                <input type="password" id="password" class="inputs pwd" placeholder="Password">
+                <span class="tips">Recovery Password</span>
+                <button id="loginButton">Sign In</button>
+                
+                <!-- 添加注册提示 -->
+                <div class="register-prompt">
+                    <span>NO ACCOUNT?</span>
+                    <a href="register.html"> Register Now!</a>
+                </div>
+                <div class="error" id="loginError"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.querySelector(".people").addEventListener('animationend', function () {
+        this.classList.remove('p-animtion');
+        this.classList.add('p-other-animtion')
+    });
+    document.querySelector(".sphere").addEventListener('animationend', function () {
+        this.classList.remove('s-animtion');
+        this.classList.add('s-other-animtion')
+    });
+
+    document.getElementById('loginButton').addEventListener('click', function(event) {
+        event.preventDefault();
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const loginError = document.getElementById('loginError');
+
+        loginError.textContent = '';
+
+        // 从localStorage获取用户信息
+        const user = JSON.parse(localStorage.getItem('user'));
+
+        if (user && user.email === email && user.password === password) {
+            alert('successfully logged in');
+            window.location.href = './Overview.html';
+        } else {
+            loginError.textContent = 'invalid email or password';
+        }
+    });
+</script>
+
+</html>

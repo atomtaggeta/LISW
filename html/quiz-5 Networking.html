@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Computer Networking Quiz</title>  
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">  
+    <link rel="stylesheet" href="../css/quiz2.css">  
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+
+
+<div class="sidebar">
+  <div class="logo-details">
+    <a href="../index.html">
+      <img class="logo-img" src="../logo.png" alt="Logo">
+    </a>
+    
+  </div>
+  <ul class="nav-links">
+    <li>
+        <a href="overview.html">
+          <i class='bx bx-grid-alt' ></i>
+          <span class="link_name">Overview</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Overview</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">Knowledge</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name">Knowledge</a></li>
+          <li><a href="Chapter1.html">1. Hardware</a></li>
+          <li><a href="Chapter2.html">2. Computer</a></li>
+          <li><a href="Chapter3-1.html">3. Software</a></li>
+          <li class="sub-links"><a href="Chapter3-1.html">I. Operating systems</a></li>
+          <li class="sub-links"><a href="Chapter3-2.html">II. Algorithms</a></li>
+          <li class="sub-links"><a href="Chapter3-3.html">III. Prog. Lang.</a></li>
+          <li><a href="Chapter4.html">4. Data</a></li>
+          <li><a href="Chapter5.html">5. Network</a></li>
+          <li><a href="Chapter6.html">6. Bigdata and AI</a></li>
+          
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Exercise</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Exercise</a></li>
+          <li><a href="QUIZ.html">Quizzes</a></li>
+          <li><a href="test.html">Test</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="resources-book.html">
+          <i class='bx bx-pie-chart-alt-2' ></i>
+          <span class="link_name">Resources books</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Resources</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="resources-video.html">
+          <i class='bx bx-pie-chart-alt-2' ></i>
+          <span class="link_name">Resources video</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Resources</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="A.html">
+          <i class='bx bxs-book-open'></i>
+          <span class="link_name">Glossary</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Glossary</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="inforum.html">
+          <i class='bx bx-line-chart' ></i>
+          <span class="link_name">Forum</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="in">Forum</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link"></div>    
+      </li>
+      <li>
+        <a href="coding.html">
+          <i class='bx bx-compass' ></i>
+          <span class="link_name">Explore</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Explore</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="history.html">
+          <i class='bx bx-history'></i>
+          <span class="link_name">History</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">History</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="faq.html">
+          <i class='bx bx-question-mark'></i>
+          <span class="link_name">FAQ</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="faq.html">FAQ</a></li>
+        </ul>
+      </li>
+
+      <li>
+    <div class="profile-details">
+      <a href="personal.html">
+        <div class="profile-content">
+          <img src="../img/Profile.jpg" alt="profile">
+        </div>
+        <div class="name-job">
+          <div class="profile_name">nickname</div>
+          <div class="job">CS learner</div>
+        </div>
+        </a>
+        <a href="../index.html">
+        <i class='bx bx-log-out' ></i>
+      </a>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <span class="text"></span>
+    </div>
+    <div class="content-elements">
+        <div class="container">  
+            <h1>Computer Networking Quiz</h1>   
+                
+            <div class="section">  
+                <h2>True or False</h2>  
+                <ul>  
+                    <li> A P2P network establishes a single portal through which communication is managed. <span class="answer">False</span></li>  
+                    <li> A port is a numeric designation that corresponds to a particular high-level protocol. <span class="answer">True</span></li>  
+                    <li> A firewall protects a local-area network from physical damage. <span class="answer">False</span></li>  
+                    <li> Each company can establish its own access control policy. <span class="answer">True</span></li>  
+                    <li> A TV cable company cannot also be an Internet service provider. <span class="answer">False</span></li>  
+                    <li> Some top-level domains are based on the country in which the registering organization is based. <span class="answer">True</span></li>  
+                    <li> There are now hundreds of top-level domains in the domain name system. <span class="answer">True</span></li>  
+                </ul>  
+            </div>  
+    
+            <div class="section">  
+                <h2>Multiple Choice</h2>  
+                <ol>  
+                    <li> The biggest advantage of computer network is <strong><span class="answer">(A)</span></strong>  
+                        <ul>  
+                            <li>A. file-sharing</li>  
+                            <li>B. enlarging capacity</li>  
+                            <li>C. efficient calculation</li>  
+                            <li>D. saving manpower</li>  
+                        </ul>  
+                    </li>  
+                    <li> Which of the following service is not provided by Internet <strong><span class="answer">(D)</span></strong>  
+                        <ul>  
+                            <li>A. searching information</li>  
+                            <li>B. online games</li>  
+                            <li>C. telnet</li>  
+                            <li>D. multi-media making</li>  
+                        </ul>  
+                    </li>  
+                    <li> Which device is used in the choosing of data transfer paths when two different kinds of Internet are connected with each other <strong><span class="answer">(C)</span></strong>  
+                        <ul>  
+                            <li>A. Bridge</li>  
+                            <li>B. HUB</li>  
+                            <li>C. Router</li>  
+                            <li>D. Switch</li>  
+                        </ul>  
+                    </li>  
+                    <li> The communication between LANs obeys a certain kind of rules, which is called <strong><span class="answer">(D)</span></strong>  
+                        <ul>  
+                            <li>A. Configuration</li>  
+                            <li>B. Command</li>  
+                            <li>C. Asynchronous transmission</li>  
+                            <li>D. Protocol</li>  
+                        </ul>  
+                    </li>  
+                    <li> IP stands for <strong><span class="answer">(A)</span></strong>  
+                        <ul>  
+                            <li>A. Internetwork protocol</li>  
+                            <li>B. TCP</li>  
+                            <li>C. Simple Network Management Protocol</li>  
+                            <li>D. Telnet</li>  
+                        </ul>  
+                    </li>  
+                    <li> Top-level domain “.com” shows that this domain belongs to <strong><span class="answer">(D)</span></strong>  
+                        <ul>  
+                            <li>A. International organization</li>  
+                            <li>B. Education system</li>  
+                            <li>C. Government</li>  
+                            <li>D. Commercial Institution</li>  
+                        </ul>  
+                    </li>  
+                    <li> A <strong><span class="answer">(B)</span></strong> is a set of rules that controls the interaction of different devices in a network or internetwork.  
+                        <ul>  
+                            <li>A. model</li>  
+                            <li>B. protocol</li>  
+                            <li>C. dialog</li>  
+                            <li>D. synchronization point</li>  
+                        </ul>  
+                    </li>  
+                    <li> The <strong><span class="answer">(A)</span></strong> layer of the OSI model transmits a bit stream over a physical medium.  
+                        <ul>  
+                            <li>A. physical</li>  
+                            <li>B. data-link</li>  
+                            <li>C. network</li>  
+                            <li>D. transport</li>  
+                        </ul>  
+                    </li>  
+                    <li> The <strong><span class="answer">(C)</span></strong> layer of TCP/IP has functions similar to those of the application, presentation, and session layers of the OSI model.  
+                        <ul>  
+                            <li>A. transport</li>  
+                            <li>B. network</li>  
+                            <li>C. application</li>  
+                            <li>D. session</li>  
+                        </ul>  
+                    </li>  
+                    <li> What is the domain name in the email address kayla@pit.arc.nasa.gov? <strong><span class="answer">(C)</span></strong>  
+                        <ul>  
+                            <li>A. kayla</li>  
+                            <li>B. kayla@pit.arc.nasa.gov</li>  
+                            <li>C. pit.arc.nasa.gov</li>  
+                            <li>D. nasa.gov</li>  
+                        </ul>  
+                    </li>  
+                    <li> The transport layer protocol of TCP/IP is called <strong><span class="answer">(D)</span></strong>.  
+                        <ul>  
+                            <li>A. TCP</li>  
+                            <li>B. UDP</li>  
+                            <li>C. IP</li>  
+                            <li>D. A and B</li>  
+                        </ul>  
+                    </li>  
+                    <li> Both humans and <strong><span class="answer">(C)</span></strong> can be considered users of a database.  
+                        <ul>  
+                            <li>A. data</li>  
+                            <li>B. programming languages</li>  
+                            <li>C. applications</li>  
+                            <li>D. hardware</li>  
+                        </ul>  
+                    </li>  
+                    <li> Of the various database models, the <strong><span class="answer">(C)</span></strong> model is the most prevalent today.  
+                        <ul>  
+                            <li>A. hierarchical</li>  
+                            <li>B. network</li>  
+                            <li>C. relational</li>  
+                            <li>D. linked list</li>  
+                        </ul>  
+                    </li>  
+                    <li> The <strong><span class="answer">(A)</span></strong> database model arranges its data in the form of an inverted tree.  
+                        <ul>  
+                            <li>A. hierarchical</li>  
+                            <li>B. network</li>  
+                            <li>C. relational</li>  
+                            <li>D. linked list</li>  
+                        </ul>  
+                    </li>  
+                    <li> In database operations, a binary operator is applied to <strong><span class="answer">(C)</span></strong> relations(s) and creates an output of <strong><span class="answer">(C)</span></strong> relation(s).  
+                        <ul>  
+                            <li>A. one; one</li>  
+                            <li>B. one; two</li>  
+                            <li>C. two; one</li>  
+                            <li>D. two; two</li>  
+                        </ul>  
+                    </li>  
+                    <li> Which of the following is a unary operator in database operations? <strong><span class="answer">(D)</span></strong>  
+                        <ul>  
+                            <li>A. intersection</li>  
+                            <li>B. union</li>  
+                            <li>C. join</li>  
+                            <li>D. project</li>  
+                        </ul>  
+                    </li>  
+                    <li> <strong><span class="answer">(D)</span></strong> is a protocol for accessing and transferring documents on the WWW.  
+                        <ul>  
+                            <li>A. TELNET</li>  
+                            <li>B. FTP</li>  
+                            <li>C. SMTP</li>  
+                            <li>D. HTTP</li>  
+                        </ul>  
+                    </li>  
+                </ol>  
+            </div>  
+    
+            <div class="section">  
+                <h2>Objective Items</h2>  
+                <ol>  
+                    <li>What is a computer network?   
+                        <span class="answer">It’s a collection of computing devices that are connected in various ways to communicate and share resources.</span>  
+                    </li>  
+                    <p> </p>
+                    <li> To what does the word node (host) refer?   
+                        <span class="answer">Addressable device attached to a network.</span>  
+                    </li> 
+                    <p> </p> 
+                    <li> Describe the client/server model.   
+                        <span class="answer">A distributed approach in which a client makes requests of a server and the server responds.</span>  
+                    </li>  
+                    <p> </p>
+                    <li>What is a P2P network?   
+                        <span class="answer">A decentralized approach that shares resources and responsibilities among many “peer” computers.</span>  
+                    </li>  
+                    <p> </p>
+                    <li> Distinguish between the following LAN topologies: ring, star, and bus. How does the shape of the topology influence message flow through a LAN?  
+                        <span class="answer">A ring topology connects all nodes in a closed loop on which messages travel in one direction. The nodes of a ring network pass along messages until they reach their destination. A star topology centers on one node to which all others are connected and through which all messages are sent. In a bus topology, all nodes are connected to a single communication line that carries messages in both directions. The nodes on the bus check any message sent on the bus but ignore any that are not addressed to them.</span>  
+                    </li>  
+                    <p> </p>
+                    <li> Messages sent across the Internet are divided into packets. What is a packet, and why are messages divided into them?  
+                        <span class="answer">A packet is a unit of data sent across a network. To improve the efficiency of transferring data over a shared communication line.</span>  
+                    </li>  
+                    <p>  </p>
+                    <li>Name three technologies for connecting a home computer to the Internet.   
+                        <span class="answer">Phone modem, cable modem, digital subscriber line (DSL).</span>  
+                    </li>  
+                    <p> </p>
+                    <li>Explain the term packet switching.   
+                        <span class="answer">The approach to network communication in which packets are individually routed to their destination, then reassembled.</span>  
+                    </li>  
+                    <p> </p>
+                    <li>53. What problems arise due to packet switching? And how can they be solved?  
+                        <span class="answer">A path may be blocked due to a down machine, and a router might send a packet along an alternative route. A communication line may span a long distance, and the signal may weaken. Repeaters are installed periodically along the line to strengthen and propagate the signal.</span>  
+                    </li>  
+                    <p> </p>
+                    <li>What does the acronym of MAN represent?   
+                        <span class="answer">Metropolitan-area network.</span>  
+                    </li>  
+                    <p> </p>
+                    <li>How is a hostname composed?   
+                        <span class="answer">It consists of the computer name followed by the domain name.</span>  
+                    </li> 
+                    <p> </p> 
+                    <li>Why was the IPv6 protocol created for IP addresses?   
+                        <span class="answer">The IPv4 strategy is limited in the number of unique computers (around four billion) it could identify. As Internet use increased, especially with the popularity of mobile computing devices such as smartphones and tablets, the supply of unique 4-byte IPv4 addresses dwindled.</span>  
+                    </li>  
+                    <p> </p>
+                    <li>What is a top-level domain name (TLD)?   
+                        <span class="answer">The last section of a domain name specifying the type of organization or its country of origin.</span>  
+                    </li>  
+                    <p> </p>
+                    <li>An engineer notices that the data received by computers at the two ends of a bus LAN contain many errors. What do you think is the problem? What can be done to solve the problem?  
+                        <span class="answer">An engineer notices that the data received by computers at the two ends of a bus LAN contain many errors. This could indicate issues with the bus itself or interference. Solutions would include checking cable integrity, ensuring proper termination, or replacing damaged sections.</span>  
+                    </li>  
+                    <p> </p>
+                    <li>A small part of a bus LAN with 200 stations is damaged. How many other stations are affected by this damage?  
+                        <span class="answer">In a bus topology, when a station sends a frame to another computer, all computers receive the frame and check its destination address. So, no computer is affected by this damage.</span>  
+                    </li> 
+                    <p> </p> 
+                    <li>A small part of a star LAN with 200 stations is damaged. How many other stations are affected by this damage?  
+                        <span class="answer">If the core node station is among those 200 stations, then all the stations will be affected by this damage. Otherwise, no computer is affected by this damage.</span>  
+                    </li>  
+                    <p> </p>
+                </ol>  
+            </div>  
+            
+        </div>  
+    </div>
+  </section>
+
+<script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>  
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">  
+    <link rel="stylesheet" href="../css/quiz2.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+
+
+<div class="sidebar">
+  <div class="logo-details">
+    <a href="../index.html">
+      <img class="logo-img" src="../logo.png" alt="Logo">
+    </a>
+    
+  </div>
+  <ul class="nav-links">
+    <li>
+        <a href="overview.html">
+          <i class='bx bx-grid-alt' ></i>
+          <span class="link_name">Overview</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Overview</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">Knowledge</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name">Knowledge</a></li>
+          <li><a href="Chapter1.html">1. Hardware</a></li>
+          <li><a href="Chapter2.html">2. Computer</a></li>
+          <li><a href="Chapter3-1.html">3. Software</a></li>
+          <li class="sub-links"><a href="Chapter3-1.html">I. Operating systems</a></li>
+          <li class="sub-links"><a href="Chapter3-2.html">II. Algorithms</a></li>
+          <li class="sub-links"><a href="Chapter3-3.html">III. Prog. Lang.</a></li>
+          <li><a href="Chapter4.html">4. Data</a></li>
+          <li><a href="Chapter5.html">5. Network</a></li>
+          <li><a href="Chapter6.html">6. Bigdata and AI</a></li>
+          
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Exercise</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Exercise</a></li>
+          <li><a href="QUIZ.html">Quizzes</a></li>
+          <li><a href="test.html">Test</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="resources-book.html">
+          <i class='bx bx-pie-chart-alt-2' ></i>
+          <span class="link_name">Resources books</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Resources</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="resources-video.html">
+          <i class='bx bx-pie-chart-alt-2' ></i>
+          <span class="link_name">Resources video</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Resources</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="A.html">
+          <i class='bx bxs-book-open'></i>
+          <span class="link_name">Glossary</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Glossary</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="inforum.html">
+          <i class='bx bx-line-chart' ></i>
+          <span class="link_name">Forum</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="in">Forum</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link"></div>    
+      </li>
+      <li>
+        <a href="coding.html">
+          <i class='bx bx-compass' ></i>
+          <span class="link_name">Explore</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Explore</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="history.html">
+          <i class='bx bx-history'></i>
+          <span class="link_name">History</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">History</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="faq.html">
+          <i class='bx bx-question-mark'></i>
+          <span class="link_name">FAQ</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="faq.html">FAQ</a></li>
+        </ul>
+      </li>
+
+      <li>
+    <div class="profile-details">
+      <a href="personal.html">
+        <div class="profile-content">
+          <img src="../img/Profile.jpg" alt="profile">
+        </div>
+        <div class="name-job">
+          <div class="profile_name">nickname</div>
+          <div class="job">CS learner</div>
+        </div>
+        </a>
+        <a href="../index.html">
+        <i class='bx bx-log-out' ></i>
+      </a>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <span class="text"></span>
+    </div>
+    <div class="content-elements">
+        <div class="container">  
+            <h1>Quiz</h1>  
+    
+            <div class="section">  
+                <h2>Fill in the blanks</h2>  
+                <ul>  
+                    <li>1. A bitmap image usually requires <span class="answer">(more larger)</span> storage space.</li>  
+                    <li>2. A <span class="answer">(bitmap)</span> is divided into matrix pixels, where white is represented by 1 and black is represented by 0.</li>  
+                    <li>3. The vector image consists of linear equations and curve equations.</li>  
+                    <li>4. Video is a representation of images <span class="answer">(frames)</span> over time.</li>  
+                    <li>5. Each symbol in the ASCII code is defined by <span class="answer">(7/8)</span> bits.</li>  
+                    <li>6. In <span class="answer">(design)</span> stage, we turn our requirements into a realizable technology plan during the system life cycle.</li>  
+                    <li>7. For a signed integer (n bits), the range is <span class="answer">(-(2<sup>(n-1)</sup>) to 2<sup>(n-1)</sup>-1)</span>.</li>  
+                </ul>  
+            </div>  
+    
+            <div class="section">  
+                <h2>True or False</h2>  
+                <div class="true-false">  
+                    <div>1. The width of the data bus is the number of lines of the data bus, which determines the number of bits that can be transmitted at the same time. <span class="answer">True</span></div>  
+                    <div>2. The address bus determines the addressing capability of the CPU, and if you use the address bus for N bits, the accessible space is 2<sup>n</sup>. <span class="answer">True</span></div>  
+                    <div>3. Software is divided into system software and application software. <span class="answer">True</span></div>  
+                    <div>4. The operating system is software that can only be read and cannot be written and stored in the ROM. <span class="answer">False</span></div>  
+                    <div>5. Software design should avoid modularity. <span class="answer">False</span></div>  
+                    <div>6. UML, structure chart and class diagrams may be used during software design. <span class="answer">True</span></div>  
+                    <div>7. Information shielding between modules in the software design process means that each other's information cannot be accessed arbitrarily. <span class="answer">True</span></div>  
+                    <div>8. In the process of software implementation, try to avoid using pseudocode and write in a specific language. <span class="answer">False</span></div>  
+                    <div>9. Signed integers typically use the first 0 to mean negative numbers. <span class="answer">False</span></div>  
+                    <div>10. For positive numbers, we use the same bit patterns for a number no matter which scheme we use: sign-and-magnitude, one’s complement, and two’s complement. <span class="answer">True</span></div>  
+                    <div>11. If we two’s complement a number twice, we get the original number. <span class="answer">True</span></div>  
+                    <div>12. Java has fast speed and can solve problems with the help of pointers. <span class="answer">False</span></div>  
+                    <div>13. Waterfall model is useful for dealing with problems that change frequently and have no concrete requirements. <span class="answer">False</span></div>  
+                    <div>14. The system software includes device drivers. <span class="answer">True</span></div>  
+                    <div>15. Word process software and spreadsheet software both belong to system software. <span class="answer">False</span></div>  
+                </div>  
+            </div>  
+    
+            <div class="section">  
+                <h2>Multiple Choice</h2>  
+                <ol>  
+                    <li class="mc-question">1. Which one is not the function of an operating system:  
+                        <ul>  
+                            <li>A. provide user interface</li>  
+                            <li>B. run the applications</li>  
+                            <li>C. manage resources and files</li>  
+                            <li>D. compress audio and video data</li>  
+                        </ul>  
+                    </li>  
+                    <li class="mc-question">2. One of the following is not part of the system software:  
+                        <ul>  
+                            <li>A. Operating system</li>  
+                            <li>B. Compiler</li>  
+                            <li>C. Input and output device driver</li>  
+                            <li>D. Video software</li>  
+                        </ul>  
+                    </li>  
+                    <li class="mc-question">3. Which of the following is to be used in the requirements analysis process?  
+                        <ul>  
+                            <li>A. Data flow diagrams and data dictionaries</li>  
+                            <li>B. Software management log</li>  
+                            <li>C. Maintenance logs</li>  
+                            <li>D. Design logs</li>  
+                        </ul>  
+                    </li>  
+                    <li class="mc-question">4. Which of the following meets the requirements of software design?  
+                        <ul>  
+                            <li>A. high cohesion low coupling</li>  
+                            <li>B. low cohesion high coupling</li>  
+                            <li>C. high cohesion high coupling</li>  
+                            <li>D. low cohesion low coupling</li>  
+                        </ul>  
+                    </li>  
+                    <li class="mc-question">5. Which of the following tests is affected the most by the programmer's personal ability?  
+                        <ul>  
+                            <li>A. White box test</li>  
+                            <li>B. Black box test</li>  
+                            <li>C. Dynamic test</li>  
+                            <li>D. Alpha test</li>  
+                        </ul>  
+                    </li>  
+                    <li class="mc-question">6. Flow chart is generally used in which stage of software development?  
+                        <ul>  
+                            <li>A. Implementation</li>  
+                            <li>B. Testing</li>  
+                            <li>C. Design</li>  
+                            <li>D. Requirement</li>  
+                        </ul>  
+                    </li>  
+                </ol>  
+                <h3>Answers: DDAAAA</h3>  
+            </div>  
+    
+            <div class="section">  
+                <h2>Put these steps in correct order</h2>  
+                <ol>  
+                    <li>If you want to make a game just like The King of Glory, how can you do it?  
+                        <ul class="step-order">  
+                            <li>A. analysis</li>  
+                            <li>B. operations and maintenance</li>  
+                            <li>C. testing</li>  
+                            <li>D. coding</li>  
+                            <li>E. designing</li>  
+                        </ul>  
+                        <h3>Answer: AEDCB</h3>  
+                    </li>  
+                    <li>Order the following OS technologies.  
+                        <ul class="step-order">  
+                            <li>A. No operating system</li>  
+                            <li>B. parallel system</li>  
+                            <li>C. distributed system</li>  
+                            <li>D. personal system</li>  
+                            <li>E. time sharing system</li>  
+                            <li>F. batch system</li>  
+                        </ul>  
+                        <h3>Answer: AFEDBC</h3>  
+                    </li>  
+                </ol>  
+            </div>  
+    
+        </div>  
+    </div>
+  </section>
+
+<script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+
+</body>
+</html>

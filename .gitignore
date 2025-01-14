@@ -1,0 +1,35 @@
+# OS generated files
+.DS_Store
+
+# Node.js dependency folders
+node_modules/
+
+# Yarn dependency folders
+.yarn/
+
+# Build directories for bundlers (e.g. Webpack, Parcel, etc.)
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variable files
+.env
+.env.local
+.env.*.local
+
+# IDE files and project settings (e.g. Visual Studio Code, JetBrains, etc.)
+.vscode/
+.idea/
+
+# MacOS system files
+*.swp
+*.swo
+
+# Temporary files
+*.bak
+*.tmp

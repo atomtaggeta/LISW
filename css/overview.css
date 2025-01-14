@@ -1,0 +1,152 @@
+/* canvas {
+    position: fixed;
+    top: 0;
+    left: 0; 
+}
+
+main {
+    width: 100vw;
+    position: absolute;
+    z-index: 99;
+    color: white;
+    width: 100%;
+    margin: 0px auto;
+    padding: 120px 0px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+.one {
+    color: rgb(0, 231, 54);
+    font-size: 50px;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+
+.two {
+    color: rgb(0, 231, 54);
+    font-size: 50px;
+    position: absolute;
+    left: 44%;
+    top: 40%;
+}
+
+.three {
+    color: rgb(0, 231, 54);
+    font-size: 50px;
+    position: absolute;
+    left: 10%;
+    top: 60%;
+}
+
+.threeone {
+    color: rgb(0, 231, 54);
+    font-size: 30px;
+    position: absolute;
+    left: 15%;
+    top: 70%;
+}
+
+.threetwo {
+    color: rgb(0, 231, 54);
+    font-size: 30px;
+    position: absolute;
+    left: 15%;
+    top: 77%;
+}
+
+.threetr {
+    color: rgb(0, 231, 54);
+    font-size: 30px;
+    position: absolute;
+    left: 15%;
+    top: 84%;
+}
+
+.four {
+    color: rgb(0, 231, 54);
+    font-size: 50px;
+    position: absolute;
+    left: 80%;
+    top: 45%;
+}
+
+.five {
+    color: rgb(0, 231, 54);
+    font-size: 50px;
+    position: absolute;
+    left: 55%;
+    top: 75%;
+}
+
+.six {
+    color:rgb(0, 231, 54);
+    font-size: 50px;
+    position: absolute;
+
+    left: 38%;
+    top: 20%;
+}
+
+.container {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .box {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(35, 35, 35);
+    /* background-image: url(../img/overview.png); */
+    background-size: 100vw 100vh;
+    border: 1px solid #000;
+    /* background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    line-height: 30px;
+}
+
+.container .box.active {
+    background-color: chartreuse;
+    background-image: none;
+    box-shadow: 0 0 10px #0f05, 0 0 30px #0f05, 0 0 80px #0f05;
+    animation: animate 2s linear forwards;
+}
+
+@keyframes animate {
+    from {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    to {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}

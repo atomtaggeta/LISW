@@ -1,0 +1,75 @@
+/* Base Styles */  
+body {  
+  background-color: #000;  
+  color: #00ccff; /* Light blue color for text */  
+  font-family: 'Arial', sans-serif;  
+}  
+
+a {
+  text-decoration: none;
+}
+
+/* Scrollable Topbar */  
+.scrollable-topbar {  
+  overflow-x: auto;  
+  white-space: nowrap;  
+  background-color: #1a1a1a;  
+  padding: 10px 0;  
+  border-bottom: 2px solid #00ccff; /* Blue border */  
+  /* position: relative;   */
+}  
+
+/* Custom scrollbar */  
+.scrollable-topbar::-webkit-scrollbar {  
+  height: 12px; /* Increased height for better visibility */  
+}  
+
+.scrollable-topbar::-webkit-scrollbar-thumb {  
+  background: #00ccff; /* Blue scrollbar thumb */  
+  border-radius: 10px; /* Rounded thumb */  
+}  
+
+.scrollable-topbar::-webkit-scrollbar-track {  
+  background: rgba(0, 0, 0, 0.6); /* Dark track */  
+  border-radius: 10px; /* Rounded track */  
+}  
+
+/* Topbar Item Styles */  
+.topbar-item {  
+  display: inline-block;  
+  padding: 10px 20px;  
+  cursor: pointer;  
+  transition: transform 0.3s, color 0.3s, background-color 0.3s;  
+  color: #00ccff; /* Light blue text */  
+  font-weight: 600; /* Bold font */  
+  font-size: 1.2rem; /* Increased font size */  
+  position: relative; /* For pseudo-element positioning */  
+}  
+
+/* Hover Effects */  
+.topbar-item:hover {  
+  color: #0505f6; /* Change text color to black */  
+  transform: translateY(-5px); /* Lift effect on hover */  
+}  
+
+/* Adding a pseudo-element for a creative hover effect */  
+.topbar-item::after {  
+  content: '';  
+  position: absolute;  
+  left: 50%;  
+  bottom: 0;  
+  width: 0;  
+  height: 3px; /* Height of the underline */  
+  background: #00ccff; /* Blue underline */  
+  transition: width 0.3s ease, left 0.3s ease; /* Animation for the underline */  
+}  
+
+.topbar-item:hover::after {  
+  width: 100%; /* Full width on hover */  
+  left: 0; /* Align to the left */  
+}  
+
+/* Adding a subtle glow effect on hover */  
+.topbar-item:hover {  
+  box-shadow: 0 0 10px rgba(0, 204, 255, 0.8); /* Glowing effect */  
+}

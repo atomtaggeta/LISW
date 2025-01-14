@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/style_register.css">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            filter: none; /* 确保没有模糊效果 */
+        }
+
+        .register-form {
+            background-color: transparent; /* 设置为透明 */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: none; /* 去掉阴影效果 */
+            width: 300px;
+        }
+
+        .register-form h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .register-form input {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .register-form button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .register-form button:hover {
+            background-color: #0056b3;
+        }
+
+        .status-message {
+            margin-top: 10px;
+            color: green;
+            text-align: center;
+        }
+
+        .error {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="register-form">
+        <h2>Register</h2>
+        <input type="text" id="email" class="inputs user" placeholder="Enter Email">
+        <input type="password" id="password" class="inputs pwd" placeholder="Enter Password">
+        <input type="password" id="confirmPassword" class="inputs pwd" placeholder="Confirm Password">
+        <button id="registerButton">Register</button>
+        <div class="status-message" id="statusMessage"></div> <!-- 用于显示注册状态 -->
+        <div class="error" id="emailError"></div>
+        <div class="error" id="passwordError"></div>
+    </div>
+</body>
+<script>
+    document.getElementById('registerButton').addEventListener('click', function(event) {
+        event.preventDefault();
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirmPassword').value;
+        const statusMessage = document.getElementById('statusMessage');
+        const emailError = document.getElementById('emailError');
+        const passwordError = document.getElementById('passwordError');
+
+        // 清空之前的状态消息
+        statusMessage.textContent = "";
+        emailError.textContent = "";
+        passwordError.textContent = "";
+
+        if (!validateEmail(email)) {
+            emailError.textContent = 'please enter a valid email address';
+            return;
+        }
+
+        if (password !== confirmPassword) {
+            passwordError.textContent = 'password and confirm password do not match';
+            return;
+        }
+
+        // 存储用户信息到localStorage
+        localStorage.setItem('user', JSON.stringify({ email, password }));
+        statusMessage.textContent = 'successfully registered';
+        statusMessage.style.color = 'green';
+        alert('successfully registered, please login');
+        window.location.href = 'login.html';
+    });
+
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
+</script>
+
+</html>

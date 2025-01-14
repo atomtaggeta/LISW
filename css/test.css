@@ -1,0 +1,48 @@
+body {
+    background-color: #e0f2f1; /* 浅绿色背景 */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.header {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 2em;
+    padding: 10px;
+}
+
+.timer {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.quiz-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    position: relative;
+}
+
+.answers {
+    margin-top: 20px;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+button {
+    font-size: 1em;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b2dfdb;
+}

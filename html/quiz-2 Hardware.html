@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>  
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">  
+    <link rel="stylesheet" href="../css/quiz2.css">  
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+
+
+<div class="sidebar">
+  <div class="logo-details">
+    <a href="../index.html">
+      <img class="logo-img" src="../logo.png" alt="Logo">
+    </a>
+    
+  </div>
+  <ul class="nav-links">
+    <li>
+        <a href="overview.html">
+          <i class='bx bx-grid-alt' ></i>
+          <span class="link_name">Overview</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Overview</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">Knowledge</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name">Knowledge</a></li>
+          <li><a href="Chapter1.html">1. Hardware</a></li>
+          <li><a href="Chapter2.html">2. Computer</a></li>
+          <li><a href="Chapter3-1.html">3. Software</a></li>
+          <li class="sub-links"><a href="Chapter3-1.html">I. Operating systems</a></li>
+          <li class="sub-links"><a href="Chapter3-2.html">II. Algorithms</a></li>
+          <li class="sub-links"><a href="Chapter3-3.html">III. Prog. Lang.</a></li>
+          <li><a href="Chapter4.html">4. Data</a></li>
+          <li><a href="Chapter5.html">5. Network</a></li>
+          <li><a href="Chapter6.html">6. Bigdata and AI</a></li>
+          
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Exercise</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Exercise</a></li>
+          <li><a href="QUIZ.html">Quizzes</a></li>
+          <li><a href="test.html">Test</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="resources-book.html">
+          <i class='bx bx-pie-chart-alt-2' ></i>
+          <span class="link_name">Resources books</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Resources</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="resources-video.html">
+          <i class='bx bx-pie-chart-alt-2' ></i>
+          <span class="link_name">Resources video</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Resources</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="A.html">
+          <i class='bx bxs-book-open'></i>
+          <span class="link_name">Glossary</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Glossary</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="inforum.html">
+          <i class='bx bx-line-chart' ></i>
+          <span class="link_name">Forum</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="in">Forum</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link"></div>    
+      </li>
+      <li>
+        <a href="coding.html">
+          <i class='bx bx-compass' ></i>
+          <span class="link_name">Explore</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Explore</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="history.html">
+          <i class='bx bx-history'></i>
+          <span class="link_name">History</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">History</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="faq.html">
+          <i class='bx bx-question-mark'></i>
+          <span class="link_name">FAQ</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="faq.html">FAQ</a></li>
+        </ul>
+      </li>
+
+      <li>
+    <div class="profile-details">
+      <a href="personal.html">
+        <div class="profile-content">
+          <img src="../img/Profile.jpg" alt="profile">
+        </div>
+        <div class="name-job">
+          <div class="profile_name">nickname</div>
+          <div class="job">CS learner</div>
+        </div>
+        </a>
+        <a href="../index.html">
+        <i class='bx bx-log-out' ></i>
+      </a>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <span class="text"></span>
+    </div>
+    <div class="content-elements">
+        <div class="container">  
+            <h1>Quiz</h1>  
+    
+            <div class="section">  
+                <h2>Multiple Choice</h2>  
+                <ol>  
+                    <li>1. The core component of the microcomputer is <span class="answer">(A)</span>.  
+                        <ul>  
+                            <li>A. Microprocessor</li>  
+                            <li>B. Controller</li>  
+                            <li>C. Memory</li>  
+                            <li>D. Operator</li>  
+                        </ul>  
+                    </li>  
+                    <li>2. On the microcomputer motherboard, it is used to provide services for CPU and other equipment is <span class="answer">(C)</span>.  
+                        <ul>  
+                            <li>A. South Bridge Chipset</li>  
+                            <li>B. North Bridge Chipset</li>  
+                            <li>C. System bus</li>  
+                            <li>D. Expansion slot</li>  
+                        </ul>  
+                    </li>  
+                    <li>3. The two major components of a computer's CPU are <span class="answer">(A)</span>.  
+                        <ul>  
+                            <li>A. Arithmetic unit and controller</li>  
+                            <li>B. Controller and registers</li>  
+                            <li>C. Arithmetic unit and memory</li>  
+                            <li>D. Controller and memory</li>  
+                        </ul>  
+                    </li>  
+                    <li>4. In the von Neumann model, the <span class="answer">(D)</span> subsystem acts as the manager of other subsystems.  
+                        <ul>  
+                            <li>A. ALU</li>  
+                            <li>B. Input/Output</li>  
+                            <li>C. Memory</li>  
+                            <li>D. Control unit</li>  
+                        </ul>  
+                    </li>  
+                    <li>5. If the ASCII code of E is 1000101, then the ASCII code of e is <span class="answer">(D)</span>.  
+                        <ul>  
+                            <li>A. 1000110</li>  
+                            <li>B. 1000111</li>  
+                            <li>C. 0000110</li>  
+                            <li>D. 1100101</li>  
+                        </ul>  
+                    </li>  
+                    <li>6. Among the following statements, the incorrect one is <span class="answer">(A)</span>.  
+                        <ul>  
+                            <li>A) The clock frequency has no effect on the performance of the CPU</li>  
+                            <li>B) The coprocessor can be added to the computer system as an independent device</li>  
+                            <li>C) The word length depends on the length of the register and the width of the bus</li>  
+                            <li>D) Multi-core computers have stronger computing power than single-core computers</li>  
+                        </ul>  
+                    </li>  
+                    <li>7. In the description of the following 4 commonly used terms, which one is mistaken? <span class="answer">(D)</span>.  
+                        <ul>  
+                            <li>A) The hardware platform of the computer must at least include the host computer and the peripheral equipment necessary to support the application</li>  
+                            <li>B) The read-write head is a device that can read information from and write information into the magnetic surface memory</li>  
+                            <li>C) The bus is a common channel for transmitting information between various components in the computer system</li>  
+                            <li>D) The most important thing in the computer's hardware computing environment is the memory capacity</li>  
+                        </ul>  
+                    </li>  
+                    <li>8. Among the following statements about the bus, the error is <span class="answer">(A)</span>.  
+                        <ul>  
+                            <li>A) ISA, PCI and USB are all expansion buses</li>  
+                            <li>B) The number of bits that the bus can transmit at one time is called the bus width</li>  
+                            <li>C) The system bus refers to the bus that connects the CPU to various external devices</li>  
+                            <li>D) The type of bus is divided into internal bus, system bus and expansion bus</li>  
+                        </ul>  
+                    </li>  
+                    <li>9. Von Neumann put forward three important ideas, in addition to the basic structure of the computer, there are <span class="answer">(C)</span>.  
+                        <ul>  
+                            <li>A) Adopt the concept of binary and internal memory</li>  
+                            <li>B) Using machine language and binary</li>  
+                            <li>C) Adopt the concept of binary and stored program control</li>  
+                            <li>D) Adopt ASCII encoding and binary</li>  
+                        </ul>  
+                    </li>  
+                    <li>10. The computer's internal memory is composed of <span class="answer">(D)</span>.  
+                        <ul>  
+                            <li>A) RAM</li>  
+                            <li>B) ROM</li>  
+                            <li>C) RAM and hard disk</li>  
+                            <li>D) RAM and ROM</li>  
+                        </ul>  
+                    </li>  
+                    <li>11. The memory that will lose the original information when the power is off is <span class="answer">(A)</span>.  
+                        <ul>  
+                            <li>A) RAM</li>  
+                            <li>B) Hard disk</li>  
+                            <li>C) ROM</li>  
+                            <li>D) Floppy disk</li>  
+                        </ul>  
+                    </li>  
+                    <li>12. The I/O interface is located at <span class="answer">(C)</span>.  
+                        <ul>  
+                            <li>A) Between host and I/O device</li>  
+                            <li>B) Between host and bus</li>  
+                            <li>C) Between bus and I/O device</li>  
+                            <li>D) Between CPU and memory</li>  
+                        </ul>  
+                    </li>  
+                    <li>13. When the computer is running, the program and data are stored in the memory. This was formally proposed and demonstrated by the research team led by <span class="answer">(C)</span> in 1946.  
+                        <ul>  
+                            <li>A) Turing</li>  
+                            <li>B) Boolean</li>  
+                            <li>C) Von Neumann</li>  
+                            <li>D) Einstein</li>  
+                        </ul>  
+                    </li>  
+                    <li>14. In the following statements about computer system hardware, what is incorrect is <span class="answer">(C)</span>.  
+                        <ul>  
+                            <li>A) The CPU is mainly composed of arithmetic units, controllers and registers</li>  
+                            <li>B) When the computer is turned off, the programs and data in RAM disappear</li>  
+                            <li>C) The data on the floppy disk and hard disk can be directly accessed by the CPU</li>  
+                            <li>D) Floppy disks and hard drives are both input devices and output devices</li>  
+                        </ul>  
+                    </li>  
+                    <li>15. The following arrangement about the read and write speed of the memory, which is correct is <span class="answer">(B)</span>.  
+                        <ul>  
+                            <li>A) RAM > Cache > Hard Disk > Floppy Disk</li>  
+                            <li>B) Cache > RAM > Hard Disk > Floppy Disk</li>  
+                            <li>C) Cache > Hard Disk > RAM > Floppy Disk</li>  
+                            <li>D) RAM > Hard Disk > Floppy Disk > Cache</li>  
+                        </ul>  
+                    </li>  
+                </ol>  
+                <h3>Answers: ACADD</h3>  
+            </div>  
+    
+            <div class="section">  
+                <h2>True or False</h2>  
+                <div class="true-false">  
+                    <div>1. The principle of stored program control is the core of von Neumann's thought. <span class="answer">True</span></div>  
+                    <div>2. The GPU enables the graphics card to reduce the dependence on the CPU and undertake part of the original CPU work, especially when performing 3D graphics processing. <span class="answer">True</span></div>  
+                    <div>3. A microcomputer is based on the CPU, and other components are all "connected" to the system bus connected to the CPU. <span class="answer">True</span></div>  
+                    <div>4. The coprocessor is also a kind of chip, which is used to reduce the specific processing tasks of the system microprocessor. <span class="answer">True</span></div>  
+                    <div>5. The main function of the memory is to store currently used programs and data. <span class="answer">True</span></div>  
+                    <div>6. Cache is external storage. <span class="answer">False</span></div>  
+                    <div>7. The main technical indicators of the printer are printing quality, speed, and noise. <span class="answer">True</span></div>  
+                    <div>8. One factor that determines the computing speed of a computer is the number of instructions that can be executed per second. <span class="answer">True</span></div>  
+                    <div>9. Read-only memory is a memory specially used to read content, but the system must write content for it before powering on each time. <span class="answer">False</span></div>  
+                </div>  
+            </div>  
+    
+            <div class="section">  
+                <h2>Fill in the Blanks</h2>  
+                <ul>  
+                    <li>1. The main manufacturers of CPU are <span class="answer">(AMD)</span> and <span class="answer">(Intel)</span> companies.</li>  
+                    <li>2. Astronomy, military, simulation, scientific computing, and other fields need to perform a lot of calculations, requiring computers to have higher computing speeds and larger storage capacity, which requires the development of more powerful <span class="answer">(Supercomputers)</span>.</li>  
+                    <li>3. RAM technology can be divided into two categories: <span class="answer">(SRAM/DRAM)</span>.</li>  
+                    <li>4. ALU is mainly used for <span class="answer">(arithmetic operations)</span> and <span class="answer">(logical operations)</span>.</li>  
+                    <li>5. The central processing unit (CPU) is composed of three parts: arithmetic logic unit, <span class="answer">(Control unit)</span>, and <span class="answer">(registers)</span>.</li>  
+                    <li>6. The main components installed on the motherboard of the microcomputer are <span class="answer">(CPU)</span>, memory, chips for processing input and output, and some expansion slots.</li>  
+                    <li>7. The main technical indicators for measuring microcomputers are five indicators: <span class="answer">(word size)</span>, main frequency, memory capacity, reliability, and availability.</li>  
+                    <li>8. In a microcomputer, the memory is addressed by <span class="answer">(Bytes)</span>.</li>  
+                </ul>  
+            </div>  
+    
+        </div>  
+    </div>
+  </section>
+
+<script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+
+</body>
+</html>

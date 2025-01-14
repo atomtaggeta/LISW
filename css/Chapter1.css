@@ -1,0 +1,100 @@
+body {  
+    font-family: 'Comic Sans MS', cursive, sans-serif;  
+    line-height: 1.6;  
+    margin: 0;  
+    padding: 0;  
+    background: linear-gradient(to bottom, #1a1a1a, #2e7d32); /* Dark to vibrant green gradient */  
+}  
+
+header {  
+    background: #0d0d0d;  
+    color: #a8e6cf;  
+    padding: 10px 0;  
+    text-align: center;  
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);  
+}  
+
+nav {  
+    background: linear-gradient(to right, #066103, #03206e); /* Bright green gradient */  
+    padding: 20px;  
+    margin: 15px 0;  
+    border-radius: 10px;  
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);  
+    text-align: center;  
+}  
+
+nav h2 {  
+    margin-top: 0;  
+    font-weight: bold;  
+    color: #ffffff;  
+}  
+
+nav ul {  
+    list-style-type: none;  
+    padding: 0;  
+}  
+
+nav ul li {  
+    margin: 10px 0;  
+    padding: 10px;  
+    border: 2px solid #76ff03; /* Bright green border */  
+    border-radius: 5px;  
+    background-color: #c7c7c9; /* Dark green background for the list items */  
+    font-weight: bold;  
+    transition: background-color 0.3s;  
+}  
+
+nav ul li:hover {  
+    background-color: #a2daa2; /* Lighter green on hover */  
+}  
+
+nav ul li a {  
+    text-decoration: none;  
+    color: #19440e;  
+}  
+
+nav ul li a:hover {  
+    text-decoration: underline;  
+    color: #32db08; /* Bright yellow hover color */  
+}  
+
+main {  
+    padding: 20px;  
+}  
+
+h1, h2, h3 {  
+    color: #10ee40; /* Bright yellow for headings */  
+}  
+
+h1 {  
+    font-size: 2.5em;  
+}  
+
+h2 {  
+    margin-top: 1.5em;  
+    font-size: 1.8em;  
+}  
+
+h3 {  
+    margin-top: 1.2em;  
+    font-size: 1.5em;  
+}  
+
+section {  
+    margin-bottom: 20px;  
+    padding: 15px;  
+    background: #ffffff;  
+    border-radius: 5px;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+}  
+
+ol, ul {  
+    margin-left: 20px;  
+}  
+
+footer {  
+    text-align: center;  
+    padding: 20px;  
+    background: #0d0d0d;  
+    color: #a8e6cf;  
+}
