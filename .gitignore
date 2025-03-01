@@ -1,0 +1,49 @@
+# macOS
+.DS_Store
+
+# IDE/Editor files
+.vscode/
+.idea/
+.sublime/
+
+# Node.js dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment variables and secrets
+.env
+.env.local
+.env.production
+
+# Log files
+*.log
+
+# Compiled files
+*.pyc
+*.class
+*.o
+*.a
+
+# OS specific
+AppleDouble/
+AppleDesktop/
+Desktop.ini
+
+# Temporary files
+*.swp
+*.bak
+*.tmp
+*.temp
+*.~*
+
+# Database files
+*.sqlite
+*.db
+
+# Python virtual environments
+venv/
+env/
+

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Chapter 1</title>
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/Chapter1.css">
+    <title>Computer Science Learning FAQ</title>
+    <link rel="stylesheet" href="../css/styles_faqpage.css">
+
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #000000, #4e2a84, #0d47a1, #5d4037);
+            background-size: 400% 400%;
+            animation: gradientMovement 15s ease infinite;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1); /* 半透明背景，与页面背景融合 */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 1;
+        }
+        h1 {
+            text-align: center;
+            color: #ADD8E6;
+        }
+        .faq-section {
+            margin-bottom: 20px;
+        }
+        .faq-question {
+            cursor: pointer;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+        .faq-question.green {
+            color: #4CAF50;
+        }
+        .faq-answer {
+            display: none;
+            margin-top: 5px;
+            margin-left: 20px;
+        }
+        .faq-question::before {
+            content: '· ';
+        }
+        .shooting-star {
+            position: absolute;
+            width: 2px;
+            height: 80px;
+            background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0));
+            opacity: 0.75;
+            animation: shooting 3s linear infinite;
+        }
+        .shooting-star:nth-child(1) {
+            top: 10%;
+            left: 70%;
+            animation-delay: 0s;
+        }
+        .shooting-star:nth-child(2) {
+            top: 30%;
+            left: 40%;
+            animation-delay: 1.5s;
+        }
+        .shooting-star:nth-child(3) {
+            top: 25%;
+            left: 80%;
+            animation-delay: 3s;
+        }
+        @keyframes gradientMovement {
+            0%, 100% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+        @keyframes shooting {
+            0% {
+                opacity: 1;
+                transform: translateX(0) translateY(0) rotate(45deg);
+            }
+            100% {
+                opacity: 0;
+                transform: translateX(-200px) translateY(200px) rotate(45deg);
+            }
+        }
+    </style>
+   </head>
+   
+<body>
+  <!-- <header class="content-header">
+    <div class="empty">  
+    </div>  
+
+        <a href="#personal-center" class="personal-center">Personal Center</a>  
+
+</header>   -->
+
+<div class="sidebar">
+  <div class="logo-details">
+    <a href="../index.html">
+      <img class="logo-img" src="../logo.png" alt="Logo">
+    </a>
+    
+  </div>
+  <ul class="nav-links">
+    <li>
+        <a href="overview.html">
+          <i class='bx bx-grid-alt' ></i>
+          <span class="link_name">Overview</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Overview</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">Knowledge</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name">Knowledge</a></li>
+          <li><a href="Chapter1.html">1. Hardware</a></li>
+          <li><a href="Chapter2.html">2. Computer</a></li>
+          <li><a href="Chapter3-1.html">3. Software</a></li>
+          <li class="sub-links"><a href="Chapter3-1.html">I. Operating systems</a></li>
+          <li class="sub-links"><a href="Chapter3-2.html">II. Algorithms</a></li>
+          <li class="sub-links"><a href="Chapter3-3.html">III. Prog. Lang.</a></li>
+          <li><a href="Chapter4.html">4. Data</a></li>
+          <li><a href="Chapter5.html">5. Network</a></li>
+          <li><a href="Chapter6.html">6. Bigdata and AI</a></li>
+          
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Exercise</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Exercise</a></li>
+          <li><a href="QUIZ.html">Quizzes</a></li>
+          <li><a href="test.html">Test</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="resources-book.html">
+          <i class='bx bx-pie-chart-alt-2' ></i>
+          <span class="link_name">Resources books</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Resources</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="resources-video.html">
+          <i class='bx bx-pie-chart-alt-2' ></i>
+          <span class="link_name">Resources video</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Resources</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="A.html">
+          <i class='bx bxs-book-open'></i>
+          <span class="link_name">Glossary</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Glossary</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="inforum.html">
+          <i class='bx bx-line-chart' ></i>
+          <span class="link_name">Forum</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Forum</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link"></div>    
+      </li>
+      <li>
+        <a href="coding.html">
+          <i class='bx bx-compass' ></i>
+          <span class="link_name">Explore</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Explore</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="history.html">
+          <i class='bx bx-history'></i>
+          <span class="link_name">History</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">History</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="faq.html">
+          <i class='bx bx-question-mark'></i>
+          <span class="link_name">FAQ</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="faq.html">FAQ</a></li>
+        </ul>
+      </li>
+      <li>
+    <div class="profile-details">
+      <a href="personal.html">
+        <div class="profile-content">
+          <img src="../img/Profile.jpg" alt="profile">
+        </div>
+        <div class="name-job">
+          <div class="profile_name">nickname</div>
+          <div class="job">CS learner</div>
+        </div>
+        </a>
+        <a href="../index.html">
+        <i class='bx bx-log-out' ></i>
+      </a>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <span class="text"></span>
+    </div>
+    <div class="content-elements">
+        <div class="container">
+            <h1>Frequently Asked Questions</h1>
+            
+            <div>
+                <div class="faq-section">
+                    <div class="faq-question green" onclick="toggleAnswer(this)">Account Related Questions</div>
+                    <div class="faq-answer">
+                        <p><strong>How to register an account?</strong> <br>Go to the registration page and fill in your details.</p>
+                        <p><strong>Forgot password?</strong> <br> Click on the "Forgot Password" link on the login page and follow the instructions.</p>
+                        <p><strong>How to modify personal information?</strong>  <br>Go to your profile settings and update the necessary fields.</p>
+                    </div>
+                </div>
+    
+                <div class="faq-section">
+                    <div class="faq-question green" onclick="toggleAnswer(this)">Course Learning Related Questions</div>
+                    <div class="faq-answer">
+                        <p><strong>How to choose the right course?</strong>  <br>Browse our course catalog and read the descriptions to find a suitable course.</p>
+                        <p><strong>How is the course progress saved?</strong>  <br>Your progress is automatically saved as you move through the course materials.</p>
+                        <p><strong>How to download course materials?</strong>  <br>Click on the download link provided within the course content.</p>
+                        <p><strong>Course videos not playing?</strong>  <br>Ensure your browser supports the video format and try clearing your cache.</p>
+                    </div>
+                </div>
+    
+                <div class="faq-section">
+                    <div class="faq-question green" onclick="toggleAnswer(this)">Technical Support Related Questions</div>
+                    <div class="faq-answer">
+                        <p><strong>How to seek help for technical issues?</strong>  <br>Contact our support team via the "Help" section on the website.</p>
+                        <p><strong>Website not accessible?</strong>  <br>Check your internet connection and try accessing the site again.</p>
+                        <p><strong>How to report a website bug?</strong>  <br>Use the feedback form available in the "Help" section.</p>
+                    </div>
+                </div>
+    
+                <div class="faq-section">
+                    <div class="faq-question green" onclick="toggleAnswer(this)">Payment and Refund Related Questions</div>
+                    <div class="faq-answer">
+                        <p><strong>What payment methods are supported?</strong>  <br>We accept credit/debit cards and PayPal.</p>
+                        <p><strong>How to apply for a refund?</strong>  <br>Go to your account settings, select the course, and follow the refund request process.</p>
+                        <p><strong>Payment issues?</strong>  <br>Contact our billing support for assistance.</p>
+                    </div>
+                </div>
+    
+                <div class="faq-section">
+                    <div class="faq-question green" onclick="toggleAnswer(this)">Certificates and Certification Related Questions</div>
+                    <div class="faq-answer">
+                        <p><strong>How to obtain a course certificate?</strong>  <br>Complete the course requirements and the certificate will be available for download.</p>
+                        <p><strong>What is the validity period of the certificate?</strong>  <br>Certificates are valid indefinitely unless otherwise stated.</p>
+                        <p><strong>How to verify the authenticity of a certificate?</strong> <br> Use the verification tool provided on our website.</p>
+                    </div>
+                </div>
+    
+                <div class="faq-section">
+                    <div class="faq-question green" onclick="toggleAnswer(this)">Community and Interaction Related Questions</div>
+                    <div class="faq-answer">
+                        <p><strong>How to join a study group?</strong>  <br>Visit the community section and request to join a group.</p>
+                        <p><strong>How to participate in forum discussions?</strong>  <br>Sign in to your account and navigate to the forum section.</p>
+                        <p><strong>How to contact a mentor?</strong>  <br>Use the messaging feature within the course platform.</p>
+                    </div>
+                </div>
+    
+                <div class="faq-section">
+                    <div class="faq-question green" onclick="toggleAnswer(this)">Privacy and Security Related Questions</div>
+                    <div class="faq-answer">
+                        <p><strong>How is personal information protected?</strong> <br> We use advanced encryption and security measures to protect your data.</p>
+                        <p><strong>How to set up account security?</strong>  <br>Enable two-factor authentication in your account settings.</p>
+                        <p><strong>What to do in case of data breach?</strong>  <br>Contact our support immediately for assistance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- 流星装饰 -->
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+    
+        <script>
+            function toggleAnswer(element) {
+                const answer = element.nextElementSibling;
+                if (answer.style.display === "none" || answer.style.display === "") {
+                    answer.style.display = "block";
+                } else {
+                    answer.style.display = "none";
+                }
+            }
+        </script>
+    </div>
+  </section>
+
+<script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+
+</body>
+</html>

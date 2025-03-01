@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Center</title>
+    <link rel="stylesheet" href="personal.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container" id="account-center">
+        <h4 class="font-weight-bold py-3 mb-4">Account Center</h4>
+        <div class="text-right mt-3 d-flex justify-content-between">
+    <div>
+        <button type="button" class="btn btn-primary" id="save-button">Save changes</button>
+        <button type="button" class="btn btn-secondary" id="reset-button">Reset</button>
+    </div>
+    <button type="button" class="btn btn-secondary" id="cancel-button">Cancel</button>
+</div>
+
+        <div class="row mt-4">
+            <div class="col-md-3">
+                <div class="list-group account-settings-links">
+                    <a href="#account-general" class="list-group-item list-group-item-action active" data-toggle="list">General</a>
+                    <a href="#account-password" class="list-group-item list-group-item-action" data-toggle="list">Change Password</a>
+                    <a href="#account-info" class="list-group-item list-group-item-action" data-toggle="list">Info</a>
+                    <a href="#account-social" class="list-group-item list-group-item-action" data-toggle="list">Social Links</a>
+                    <a href="#account-connections" class="list-group-item list-group-item-action" data-toggle="list">Connections</a>
+                    <a href="#account-notifications" class="list-group-item list-group-item-action" data-toggle="list">Notifications</a>
+                    <a href="#account-achievements" class="list-group-item list-group-item-action" data-toggle="list">Achievements</a>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="account-general">
+                        <div class="card-body media align-items-center">
+                            <img id="profile-preview" src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="User Avatar" class="d-block ui-w-80">
+                            <div class="media-body ml-4">
+                                <label class="btn btn-outline-primary">
+                                    Upload new photo
+                                    <input type="file" id="profile-upload-input" class="account-settings-fileinput" hidden>
+                                </label>
+                                <button type="button" class="btn btn-secondary" id="reset-button">Reset</button>
+                                <div class="text-muted small mt-1">Allowed JPG, GIF, or PNG. Max size 800KB.</div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input type="text" class="form-control" value="Username">
+                        </div>
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" class="form-control" value="Name">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" class="form-control" value="username@mail.com">
+                            <div class="alert alert-warning mt-3">Your email is not confirmed. Please check your inbox.<br><a href="#">Resend confirmation</a></div>
+                        </div>
+                        <div class="form-group">
+                            <label>Company</label>
+                            <input type="text" class="form-control" value="Company Ltd.">
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="account-password">
+                        <div class="form-group">
+                            <label>Current Password</label>
+                            <input type="password" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>New Password</label>
+                            <input type="password" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Repeat New Password</label>
+                            <input type="password" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="account-info">
+                        <div class="form-group">
+                            <label>Bio</label>
+                            <textarea class="form-control" rows="5">Say something about you</textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Birthday</label>
+                            <input type="date" class="form-control" value="Birthday">
+                        </div>
+                        <div class="form-group">
+                            <label>Country</label>
+                            <select class="custom-select">
+                                <option value="France">China</option>
+                                <option value="USA">USA</option>
+                                <option value="Canada" selected>Canada</option>
+                                <option value="UK">UK</option>
+                                <option value="Germany">Germany</option>
+                                <option value="France">France</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="tel" class="form-control" value="+86">
+                        </div>
+                        <div class="form-group">
+                            <label>Website</label>
+                            <input type="url" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="account-social">
+                        <div class="form-group">
+                            <label>Twitter</label>
+                            <input type="url" class="form-control" value="https://twitter.com/user">
+                        </div>
+                        <div class="form-group">
+                            <label>Facebook</label>
+                            <input type="url" class="form-control" value="https://www.facebook.com/user">
+                        </div>
+                        <div class="form-group">
+                            <label>Instagram</label>
+                            <input type="url" class="form-control" value="https://www.instagram.com/user">
+                        </div>
+                        <div class="form-group">
+                            <label>LinkedIn</label>
+                            <input type="url" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="account-connections">
+                        <button type="button" class="btn btn-twitter mb-3">Connect to Twitter</button>
+                        <button type="button" class="btn btn-facebook mb-3">Connect to Facebook</button>
+                        <button type="button" class="btn btn-instagram mb-3">Connect to Instagram</button>
+                    </div>
+
+                    <div class="tab-pane fade" id="account-notifications">
+                        <div class="form-group">
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                                Email me when someone comments on my article
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                                Email me when someone answers my forum thread
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                                Email me when someone follows me
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="account-achievements">
+                        <h5 class="font-weight-bold">Achievements</h5>
+                        <ul class="list-group mt-3">
+                            <li class="list-group-item">Logged in 10 days in a row</li>
+                            <li class="list-group-item">Completed profile setup</li>
+                            <li class="list-group-item">Connected social media accounts</li>
+                            <li class="list-group-item">Saved 5 articles</li>
+                            <li class="list-group-item">Participated in 3 discussions</li>
+                            <li class="list-group-item">Received 10 likes on comments</li>
+                            <li class="list-group-item">Gained 100 followers</li>
+                        </ul>
+
+                        <div class="day-streak mt-4 text-center">
+                            <h6 class="font-weight-bold">Day Streak</h6>
+                            <p class="display-4 text-warning">🔥 7 Days</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const profileUploadInput = document.getElementById('profile-upload-input');
+            const profilePreview = document.getElementById('profile-preview');
+            const resetButton = document.getElementById('reset-button');
+
+            profileUploadInput.addEventListener('change', function() {
+                const file = this.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        profilePreview.src = e.target.result;
+                    }
+                    reader.readAsDataURL(file);
+                }
+            });
+
+            resetButton.addEventListener('click', function() {
+                profilePreview.src = 'https://bootdey.com/img/Content/avatar/avatar1.png';
+                profileUploadInput.value = '';
+            });
+
+            const saveButton = document.getElementById('save-button');
+            const formControls = document.querySelectorAll('.form-control');
+
+            saveButton.addEventListener('click', function() {
+                let changes = {};
+                formControls.forEach(control => {
+                    if (control.type === 'text' || control.type === 'email' || control.type === 'url' || control.type === 'tel' || control.type === 'textarea' || control.type === 'date') {
+                        changes[control.previousElementSibling.innerText] = control.value;
+                    }
+                });
+                console.log('Changes saved:', changes);
+                alert('Your changes have been saved successfully!');
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

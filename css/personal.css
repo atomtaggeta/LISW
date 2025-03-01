@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6b11cb8a, #2574fc60);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+#account-center {
+    width: 80%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.account-settings-links .list-group-item {
+    border: none;
+    padding: 15px;
+    font-weight: 500;
+    color: #333;
+    background: transparent;
+    transition: all 0.3s;
+}
+
+.account-settings-links .list-group-item.active {
+    background: #2574fc;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.account-settings-links .list-group-item:hover {
+    background: rgba(37, 116, 252, 0.1);
+    color: #2574fc;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.ui-w-80 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+}
+
+.btn-outline-primary {
+    border-color: #2574fc;
+    color: #2574fc;
+    transition: all 0.3s;
+}
+
+.btn-outline-primary:hover {
+    background: #2574fc;
+    color: #fff;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-twitter, .btn-facebook, .btn-instagram {
+    width: 100%;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: background 0.3s;
+}
+
+.btn-twitter {
+    background: #1DA1F2;
+}
+
+.btn-facebook {
+    background: #3B5998;
+}
+
+.btn-instagram {
+    background: #E1306C;
+}
+
+.btn-twitter:hover {
+    background: #0d95e8;
+}
+
+.btn-facebook:hover {
+    background: #2d4373;
+}
+
+.btn-instagram:hover {
+    background: #c32aa3;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+    border-color: #2574fc;
+    box-shadow: 0 0 5px rgba(37, 116, 252, 0.5);
+}
+
+label.switch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+label.switch input {
+    display: none;
+}
+
+label.switch .slider {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background: #ccc;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+label.switch .slider:before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #fff;
+    top: 1px;
+    left: 1px;
+    transition: transform 0.3s;
+}
+
+label.switch input:checked + .slider {
+    background: #2574fc;
+}
+
+label.switch input:checked + .slider:before {
+    transform: translateX(20px);
+}

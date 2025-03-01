@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>AI Quiz</title>  
+        <link rel="stylesheet" href="../css/quiz2.css">  
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+
+
+<div class="sidebar">
+  <div class="logo-details">
+    <a href="../index.html">
+      <img class="logo-img" src="../logo.png" alt="Logo">
+    </a>
+    
+  </div>
+  <ul class="nav-links">
+    <li>
+        <a href="overview.html">
+          <i class='bx bx-grid-alt' ></i>
+          <span class="link_name">Overview</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Overview</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">Knowledge</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name">Knowledge</a></li>
+          <li><a href="Chapter1.html">1. Hardware</a></li>
+          <li><a href="Chapter2.html">2. Computer</a></li>
+          <li><a href="Chapter3-1.html">3. Software</a></li>
+          <li class="sub-links"><a href="Chapter3-1.html">I. Operating systems</a></li>
+          <li class="sub-links"><a href="Chapter3-2.html">II. Algorithms</a></li>
+          <li class="sub-links"><a href="Chapter3-3.html">III. Prog. Lang.</a></li>
+          <li><a href="Chapter4.html">4. Data</a></li>
+          <li><a href="Chapter5.html">5. Network</a></li>
+          <li><a href="Chapter6.html">6. Bigdata and AI</a></li>
+          
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Exercise</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Exercise</a></li>
+          <li><a href="QUIZ.html">Quizzes</a></li>
+          <li><a href="test.html">Test</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="resources-book.html">
+          <i class='bx bx-pie-chart-alt-2' ></i>
+          <span class="link_name">Resources books</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Resources</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="resources-video.html">
+          <i class='bx bx-pie-chart-alt-2' ></i>
+          <span class="link_name">Resources video</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Resources</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="A.html">
+          <i class='bx bxs-book-open'></i>
+          <span class="link_name">Glossary</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Glossary</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="inforum.html">
+          <i class='bx bx-line-chart' ></i>
+          <span class="link_name">Forum</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="in">Forum</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link"></div>    
+      </li>
+      <li>
+        <a href="coding.html">
+          <i class='bx bx-compass' ></i>
+          <span class="link_name">Explore</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Explore</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="history.html">
+          <i class='bx bx-history'></i>
+          <span class="link_name">History</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">History</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="faq.html">
+          <i class='bx bx-question-mark'></i>
+          <span class="link_name">FAQ</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="faq.html">FAQ</a></li>
+        </ul>
+      </li>
+
+      <li>
+    <div class="profile-details">
+      <a href="personal.html">
+        <div class="profile-content">
+          <img src="../img/Profile.jpg" alt="profile">
+        </div>
+        <div class="name-job">
+          <div class="profile_name">nickname</div>
+          <div class="job">CS learner</div>
+        </div>
+        </a>
+        <a href="../index.html">
+        <i class='bx bx-log-out' ></i>
+      </a>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <span class="text"></span>
+    </div>
+    <div class="content-elements">
+        <div class="container">  
+            <div class="header">  
+                <h1>Quiz</h1>  
+            </div>  
+            <div class="section">  
+                <h2>Fill in the Blanks</h2>  
+                <ol>  
+                    <li>The field of study that focuses on creating machines that can perform tasks that typically require human intelligence is known as __________.</li>  
+                    <li>__________ learning is a type of machine learning where the model is trained on labeled data.</li>  
+                    <li>A __________ is a neural network architecture that is particularly effective for image recognition tasks.</li>  
+                    <li>The process of improving a model's performance by adjusting its parameters is called __________.</li>  
+                    <li>__________ is a subset of AI that deals with the simulation of human conversation through chatbots and virtual assistants.</li>  
+                    <li>The __________ algorithm is commonly used for classification tasks in machine learning.</li>  
+                    <li>In AI, __________ refers to the ability of a system to learn from data and improve over time.</li>  
+                    <li>A __________ is a collection of algorithms that can process and analyze large amounts of data to extract insights.</li>  
+                    <li>__________ is the ethical consideration of how AI systems impact society and individuals.</li>  
+                    <li>The term __________ refers to the ability of AI systems to understand and generate human language.</li>  
+                </ol>  
+            </div>  
+            <div class="section">  
+                <h2>Multiple Choice Questions</h2>  
+                <ol>  
+                    <li>Which of the following is a common application of AI?  
+                        <ul>  
+                            <li>a) Image recognition</li>  
+                            <li>b) Natural language processing</li>  
+                            <li>c) Autonomous vehicles</li>  
+                            <li>d) All of the above</li>  
+                        </ul>  
+                    </li>  
+                    <li>What does the acronym "NLP" stand for in the context of AI?  
+                        <ul>  
+                            <li>a) Neural Learning Process</li>  
+                            <li>b) Natural Language Processing</li>  
+                            <li>c) Non-linear Programming</li>  
+                            <li>d) Network Logic Protocol</li>  
+                        </ul>  
+                    </li>  
+                    <li>Which of the following is NOT a type of machine learning?  
+                        <ul>  
+                            <li>a) Supervised learning</li>  
+                            <li>b) Unsupervised learning</li>  
+                            <li>c) Reinforcement learning</li>  
+                            <li>d) Predictive learning</li>  
+                        </ul>  
+                    </li>  
+                    <li>What is the primary goal of reinforcement learning?  
+                        <ul>  
+                            <li>a) To minimize error</li>  
+                            <li>b) To maximize cumulative reward</li>  
+                            <li>c) To classify data</li>  
+                            <li>d) To cluster data</li>  
+                        </ul>  
+                    </li>  
+                    <li>Which of the following is a popular framework for building AI models?  
+                        <ul>  
+                            <li>a) TensorFlow</li>  
+                            <li>b) React</li>  
+                            <li>c) Django</li>  
+                            <li>d) Angular</li>  
+                        </ul>  
+                    </li>  
+                    <li>What is the Turing Test used for?  
+                        <ul>  
+                            <li>a) To measure a computer's processing speed</li>  
+                            <li>b) To evaluate a machine's ability to exhibit intelligent behavior</li>  
+                            <li>c) To test the accuracy of a machine learning model</li>  
+                            <li>d) To assess the efficiency of an algorithm</li>  
+                        </ul>  
+                    </li>  
+                    <li>Which of the following is a challenge in AI development?  
+                        <ul>  
+                            <li>a) Data privacy</li>  
+                            <li>b) Algorithm bias</li>  
+                            <li>c) Lack of transparency</li>  
+                            <li>d) All of the above</li>  
+                        </ul>  
+                    </li>  
+                    <li>What is the purpose of a neural network in AI?  
+                        <ul>  
+                            <li>a) To store data</li>  
+                            <li>b) To simulate human brain functions</li>  
+                            <li>c) To create user interfaces</li>  
+                            <li>d) To manage databases</li>  
+                        </ul>  
+                    </li>  
+                </ol>  
+            </div>  
+            <div class="section">  
+                <h2>True or False Questions</h2>  
+                <ol>  
+                    <li>AI systems can only perform tasks they have been explicitly programmed to do. (True/False)</li>  
+                    <li>Machine learning is a subset of AI that focuses on data-driven learning. (True/False)</li>  
+                    <li>Deep learning requires large amounts of labeled data to be effective. (True/False)</li>  
+                    <li>AI can be used to enhance decision-making processes in various industries. (True/False)</li>  
+                    <li>All AI systems are capable of understanding human emotions. (True/False)</li>  
+                    <li>Natural language processing allows machines to interpret and respond to human language. (True/False)</li>  
+                    <li>AI technologies are only applicable in the tech industry. (True/False)</li>  
+                    <li>Ethical considerations are important in the development of AI systems. (True/False)</li>  
+                </ol>  
+            </div>  
+            <div class="answers">  
+                <h2>Answers</h2>  
+                <h3>Fill in the Blanks</h3>  
+                <ol>  
+                    <li>Artificial Intelligence</li>  
+                    <li>Supervised</li>  
+                    <li>Convolutional Neural Network</li>  
+                    <li>Training</li>  
+                    <li>Conversational AI</li>  
+                    <li>Decision Tree</li>  
+                    <li>Learning</li>  
+                    <li>Data Mining</li>  
+                    <li>AI Ethics</li>  
+                    <li>Natural Language Understanding</li>  
+                </ol>  
+                <h3>Multiple Choice Questions</h3>  
+                <ol>  
+                    <li>d) All of the above</li>  
+                    <li>b) Natural Language Processing</li>  
+                    <li>d) Predictive learning</li>  
+                    <li>b) To maximize cumulative reward</li>  
+                    <li>a) TensorFlow</li>  
+                    <li>b) To evaluate a machine's ability to exhibit intelligent behavior</li>  
+                    <li>d) All of the above</li>  
+                    <li>b) To simulate human brain functions</li>  
+                </ol>  
+                <h3>True or False Questions</h3>  
+                <ol>  
+                    <li>False</li>  
+                    <li>True</li>  
+                    <li>True</li>  
+                    <li>True</li>  
+                    <li>False</li>  
+                    <li>True</li>  
+                    <li>False</li>  
+                    <li>True</li>  
+                </ol>  
+            </div>  
+        </div>  
+    </div>
+  </section>
+
+<script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>MindMap</title>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" /> -->
+    <link rel="stylesheet" href="../css/mindmap.css" />
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
+</head>
+
+<body>
+    
+    <section>
+        <h1 class="flag">Welcome to LISW</h1>
+        <h3 class="flag">Learn in the Simplest Way!</h3>
+        <p class="flag"><b>At LISW, we believe that learning computer science should be accessible to everyone. Our
+            platform offers clear,
+            step-by-step lessons designed to make even the most complex topics easy to understand. Whether you're just
+            starting out
+            or looking to advance your skills, LISW provides the tools and resources you need to succeed. Join us today
+            and start
+            your journey in computer science with confidence!</b></p>
+        <span class="curve">
+            <img src="../img/curve.png">
+        </span>
+        <div class="start">
+            <button><span><a href="content.html">Let's GO!!!</a></span></button>
+        </div>
+        <div class="log">
+            <button><span><a href="../index.html">Log Out</a></span></button>
+        </div>
+    </section>
+    <script type="text/javascript">
+        var scroll = document.querySelector('.curve');
+        window.addEventListener('scroll', function () {
+            var value = 1 + window.scrollY / -500;
+            scroll.style.transform = `scaleY(${value})`;
+        })
+    </script>
+    <div class="section-2">
+        <div class="content">
+            <div class="chapter">
+                <h2>Computer</h2>
+                <h5><b>LEARING SUGGESTIONS</b><br><br>
+                    1. Try to connect different types of computer models and understand
+                    the improvements with the advantages and disadvantages.<br><br>
+                    2. Do more practices to proficient data storage methods and combine
+                    mind maps to distinguish the relationship between different storage
+                    methods.<br><br>
+                    3. This Section will have many new concepts, making sure you
+                    understand and get familiar to the definitions and relations between the
+                    new phrases.<br><br>
+                    4. In this section we will give a more general view about the
+                    structural evolution and data storage regarding computers,
+                    hoping to give beginners a preliminary understanding.</h5>
+            </div>
+            <div class="chapter">
+                <h2>Hardware</h2>
+                <h5><b>LEARING SUGGESTIONS</b><br><br>
+                    1. This section has many key terms, making sure you are familiar with
+                    them and understand their operating mechanism.<br><br>
+                    2. Be clear of the three subsystems of hardware and the logical
+                    relationships between key terms.<br><br>
+                    3. Use examples and figures to understand the how hardware works.<br><br>
+                    4. Do practices to proficient your understanding of the component of
+                    hardware.</h5>
+            </div>
+            <div class="chapter">
+                <h2>Software</h2>
+                <h5><b>LEARING SUGGESTIONS</b><br><br>
+                    1. A computer is system made of two major components: hardware and
+                    software. <br><br>2. Computer hardware is the physical equipment, which has been
+                    studied before. Now as for the software, it is the collection of programs
+                    that allows the hardware to do its job. Instead of just being known as
+                    some programs operating in the computer, software contains many parts,
+                    dividing into two broad categories: operating system and application
+                    program. <br><br>3. In this section, we will have a systematic learning of the
+                    framework of the system and its elements.</h5>
+            </div>
+            <div class="chapter">
+                <h2>Data</h2>
+                <h5><b>LEARING SUGGESTIONS</b><br><br>
+                    1. In this chapter, we delve into the fascinating world of databases and
+                    database management systems (DBMS). <br><br>2. We introduce the concept of the
+                    three-level architecture for a DBMS, with a primary focus on the
+                    relational database model. Real-world examples illustrate the operational
+                    aspects of this model. <br><br>3. Furthermore, we explore the Standard Query
+                    Language (SQL) as a vital tool for manipulating data in relational databases.
+                    We touch briefly on the database design process and conclude with a
+                    glance at other existing database models.</h5>
+
+            </div>
+            <div class="chapter">
+                <h2>Network</h2>
+                <h5><b>LEARING SUGGESTIONS</b><br><br>
+                    1. While the primary aim of this chapter is to explore
+                    the Internet, a global system that links billions of
+                    computers, it's vital to consider the Internet not as a
+                    solitary network but as an intricate web of
+                    interconnected networks. <br><br>2. With this perspective in
+                    mind, we commence our journey by first defining what
+                    constitutes a network. Subsequently, we delve into the
+                    methods of interconnecting these networks, forging
+                    compact internetworks. <br><br>3. Finally, we unveil the intricate
+                    structure of the Internet, setting the stage for in depth exploration in the remainder of this
+                    chapter.</h5>
+            </div>
+            <div class="chapter">
+                <h2>Big Data</h2>
+                <h5><b>LEARING SUGGESTIONS</b><br><br>
+                    1. Big data primarily refers to data sets that are too large or complex to
+                    be dealt with by traditional data-processing application software. <br><br>2. Big data analysis
+                    include capturing data, data storage, data analysis,
+                    search, sharing, transfer, visualization, querying, updating, information
+                    privacy, and data source.<br><br>3. Big data was originally associated with three key concepts:
+                    volume,
+                    variety, and velocity.</h5>
+            </div>
+        </div>
+        <script>
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("active");
+                    } else {
+                        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                            return;
+                        }
+                        entry.target.classList.remove("active");
+                    }
+                });
+            }, { threshold: 0.95 });
+
+            const hiddenElements = document.querySelectorAll(".flag");
+            hiddenElements.forEach((el) => observer.observe(el));
+        </script>
+</body>
+
+</html>

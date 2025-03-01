@@ -1,0 +1,101 @@
+body {  
+    font-family: Arial, sans-serif;  
+    line-height: 1.6;  
+    margin: 0;  
+    padding: 0;  
+    background-color: #000000; /* 背景颜色为黑色 */  
+    color: #fff; /* 文字颜色为白色 */  
+}  
+
+header {  
+    background: #35424a;  
+    color: #ffffff;  
+    padding: 10px 0;  
+    text-align: center;  
+}  
+
+nav {  
+    background: #333; /* 深色背景 */  
+    padding: 20px; /* 增加填充 */  
+    margin: 15px auto; /* 垂直间距，水平居中 */  
+    border-radius: 10px; /* 圆角 */  
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* 阴影 */  
+}  
+
+nav h2 {  
+    margin-top: 0;  
+    font-weight: bold; /* 加粗标题字体 */  
+    color: hsl(240, 8%, 97%); /* 绿色标题 */  
+}  
+
+nav ul {  
+    list-style-type: none; /* 去除列表项前的圆点 */  
+    padding: 0;  
+}  
+
+nav ul li {  
+    margin: 10px 0; /* 上下间隔 */  
+    padding: 15px; /* 内边距 */  
+    border: 2px solid #00ff00; /* 绿色边框 */  
+    border-radius: 5px; /* 边框圆角 */  
+    background-color: #fbfafa; /* 深色背景 */  
+    font-weight: bold; /* 加粗字体 */  
+    transition: background-color 0.3s; /* 背景颜色过渡效果 */  
+    text-align: center; /* 居中对齐 */  
+}  
+
+nav ul li:hover {  
+    background-color: #444; /* 悬停时背景颜色变化 */  
+}  
+
+nav ul li a {  
+    text-decoration: none; /* 去除下划线 */  
+    color: #00ff00; /* 绿色文字 */  
+}  
+
+nav ul li a:hover {  
+    text-decoration: underline; /* 悬停时下划线 */  
+    color: #fff; /* 悬停时文字颜色变为白色 */  
+}  
+
+main {  
+    padding: 20px; /* 主内容的内边距 */  
+}  
+
+h1, h2, h3 {  
+    color: #00ff00; /* 绿色标题颜色 */  
+}  
+
+h1 {  
+    font-size: 2em; /* 主标题大小 */  
+}  
+
+h2 {  
+    margin-top: 1.5em; /* 上边距 */  
+    font-size: 1.5em; /* 副标题大小 */  
+}  
+
+h3 {  
+    margin-top: 1.2em; /* 上边距 */  
+    font-size: 1.2em; /* 下一级标题大小 */  
+}  
+
+section {  
+    margin-bottom: 20px; /* 各部分之间的间距 */  
+    padding: 15px; /* 内边距 */  
+    background: #222; /* 更深的背景色 */  
+    border: 2px solid #00ff00; /* 绿色边框 */  
+    border-radius: 5px; /* 边框圆角 */  
+    box-shadow: 0 2px 5px hsla(0, 27%, 98%, 0.949); /* 阴影 */  
+}  
+
+ol, ul {  
+    margin-left: 20px; /* 列表左边距 */  
+}  
+
+footer {  
+    text-align: center; /* 页脚内容居中 */  
+    padding: 20px; /* 内边距 */  
+    background: #35424a; /* 页脚背景颜色 */  
+    color: white; /* 页脚文字颜色 */  
+}
